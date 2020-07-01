@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>video</title>
+	<style type="text/css">
+		body{
+			
+			
+			height: 100%;
+			width: 100%;
+			background-image: url(images/xspr.jpg);
+			background-size: 100% ;
+			background-repeat: no-repeat;
+			
+			
+		}
+		.chuangkou{
+			border: 5px dashed #000;
+			position: relative;
+			float: left;
+			height: 40%;
+				width:60%;
+			margin: 7% 0 auto 22%;
+			background-color: aqu;
+			
+			
+		}
+		.d{
+			height: 100px;
+			width: 100px;
+			float:right;
+			background-image: url(images/xyb.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+		margin: 30% 5% auto  auto;
+			background-color: aqua;
+			opacity: 0.2;
+			
+		}
+		@-moz-keyframes xybs{
+			0% {height: 100px;
+			width:100px;
+			opacity: 0.2;}
+			40% {height: 110px;
+			width:110px;
+			opacity: 0.4;}
+			100% {height: 150px;
+			width:150px;
+			opacity: 1;}
+		}
+		.d :hover{
+			-moz-animation-name:xybs;
+			-moz-animation-duration:2s;
+			-moz-animation-timing-function:linear;
+			-webkit-animation-name:xybs;
+			-webkit-animation-duration:2s;
+			-webkit-animation-timing-function:linear;
+		
+		}
+	
+	</style>
+</head>
+
+<body>
+	<div class="chuangkou">
+	<video controls="controls" height="100%" width="100%">
+	<source src="images/video.mp4" type="video/mp4"/>
+		<source src="实验三/src/movie.ogg" type="video/ogg"/>
+		<source src="实验三/src/movie.webm" type="video/webm"/>
+		<object data="images/video.mp4" width="100%" height="100%">
+		<embed src="images/video.mp4" width="100%" height="100%">
+		</object>
+	</video>
+	</div>
+	<a href="lecture.html"><div class="d"></div></a>
+	
+</body>
+</html>
