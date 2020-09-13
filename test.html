@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <title>test</title>
 <style type="text/css">
+	@font-face{
+		font-family:myfont;
+		src: url(css/cct.ttf);
+	}
 	#fi{height: 30px;
 	    background-color: black;
 	    text-align: left;
@@ -13,154 +17,750 @@
 		    background-color: #fffddd;
 	        text-align: center;
 		height:50px;
-		font-family: 宋体;
+		font-family: myfont;
 		font-size: 50px;
 		color: skyblue;
 		border-radius: 35px 20px;
 		border:5px solid #C4C174;
 		
 	}
-	#bodyh{background-image: url(images/test-cd.jpg);
-		width: 80%;
+	.bodyh{background-image: url(images/test-cd.png);
+		width: 32.5%; 
 		color: white;
-			font-size: 50px;
+		float: left;
+		font-size: 50px;
 		text-align: center;
 		font-family: 宋体;
-		margin: 0 auto;
-	      height: 400px;
-	      border-radius: 15px 10px;
+		margin: 5px auto;
+		height: 150px;
+		border-radius: 15px 10px;
 		background-size: 100% 100%;
-		
+		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+		font-size:11px; 
+		color:#999999;
+		line-height:25px;
+		letter-spacing:1px
+
 	}
 	
-	a{  display: block;
+	a{
+		display: block;
 		color: white;
 		float: left;
 		text-decoration: none;
-	      padding-top: 8px;
-	      width:150px;
-	   text-align: center}
-	a:hover{color: aquamarine;}
-	#bod{
-		width: 1000px;
-	     margin: 0 auto;
-	     height: 80%;
-	     border: 3px solid grey;
-	     border-radius: 45px 15px;}
+		padding-top: 8px;
+		width:150px;
+		text-align: center;
+	}
+	a:hover{color: aquamarine;
+	}
+	.bod{clear: both;
+		width: 100%;
+		margin: 2% auto;
+		height: 80%;
+		border: 3px solid grey;
+		border-radius: 45px 15px;
+		font-family:"隶书", Arial, Helvetica, sans-serif;
+		font-size:20px; 
+		color:#000000;
+		line-height:25px;
+		letter-spacing:1px
+		}
 	#wewe{padding-top: 5px;
-	border-radius: 45px 15px;
+		border-radius: 45px 15px;
 		width: 950x;
-		height: 50px;
-	      margin: 0 auto;
-	     background-color:orange;
-	       text-align: center;
-	       font-size: 30px;
-	       font-family: 宋体;
+		height: 30px;
+	    margin: 0 auto;
+	    background-color:orange;
+		text-align: center;
+		font-size: 30px;
+		font-family: 宋体;
 	      }
-	#m{height: 50px;}
-	#lis{list-style-type: none;}
-	#lis li{display: block;
-	       width: 800px;
-	        height: 60px;}
-	#lis li p.m{display: block;
-		  float: left;
-		margin: 2px;
-		
-		   color: black;
-	          width: 70%;
-              text-align: left;
 	
-	height: 30%;}                          
-	#lis li p.m:hover{color:white;
-	              background-color:green;}
-	#lis li p.m:visited{color:blueviolet;
-	              background-color: gainsboro;}
+	.lis{list-style-type: none;
+	}
+	.lis li{display: block;
+			width: 100%;
+	        height: 60px;
+	}
+	.lis li p.m{
+		display: block;
+		float: left;
+		margin: 2px;
+		color: black;
+	    width: 100%;
+        text-align: left;
+		height: 30%;
+	}                          
+	.lis li p.m:hover{
+		color:white;
+		background-color:green;
+	}
+	.lis li p.m:visited{
+		color:blueviolet;
+		background-color: gainsboro;
+	}
 	.daan{
 		
 		float: left;
 		height:50px;
 		width:50px;
-		background-color: aqua;
-		background-image: url();
+		background-image: url(images/test-cd.png);
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		
+	}
+	html{width:1007px;
+		height:616px;
+		overflow: hidden;
 	}
 	input{
 		display:block;
 		width: 10%;
 		height:32%;
 		float: left;
-	}  
+	} 
+	.testwm{
+		width:10000px;
+		height: 616px;
+		overflow: hidden;
+	}
+	.test{
+		width:1007px;
+		height:616px;
+		background-color: pink;
+		float: left;
+	}
+	.l{width: 1007px;
+	   height: 616px;	
+	   text-align: center;
+	   background-color: black;}
+	.cebian{
+			width: 20%;
+			height: 30%;
+			background-color: ;
+			float: left;
+			margin: 10px 25px;
+			
+		}
+	.shangbian{
+			width: 50%;
+		    height: 15%;
+			background-color: brown;
+	        line-height: 100px;
+			margin: 10px auto;
+			float:left;}
+	button {
+   			background-color: #4CAF50; /* Green */
+   		    border: none;
+    		color: white;
+   			padding: 15px 32px;
+    		text-align: center;
+    		text-decoration: none;
+   			display: inline-block;
+    		font-size: 18px;
+			border-radius: 8px;
+	        font-family: 隶书;
+	}
+	  button:hover {
+   	   	 
+    box-shadow: 0 12px 16px 0 grey, 0 17px 50px 0 white;
+}   
+	div.card {
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	text-align: center;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	width:20%;
+	float:left;
+	padding: 20px 6px;
+}
+
+div.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 35px;
+}
+
+div.container {
+    padding: 10px;
+	background-color: white;
+}
+#header1{text-align: center;
+	font-size: 25px;
+    display: block;
+	width: 70%;
+	margin-left: 17%;
+	height: 60px;
+	color: white;
+	border-radius: 15px;
+	font-family: myfont;
+	background-color: #b7ba6b;
+	-webkit-transition: width 2s, height 2s, background-color 2s,font-size:2s, -webkit-transform 2s; 
+	 transition: width 2s, height 2s, background-color 2s,font-size:2s,transform 2s;
+	
+	}
+#header1:hover{
+	margin-left: 12%;
+	font-size: 30px;
+    display: block;
+	height: 70px;
+	width: 80%;
+	background-color: #585eaa;
+	transform: rotate(360deg);	
+	 -webkit-transform: rotate(3600deg);
+	}
+	
 	</style>
 	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.12.4.min.js"></script>
+	<script src="jquery.easing.1.3.js"></script>
+
 
  
 
 
 </head>
 
-<body>
-<div id="fi"><a href="index.html">首页</a>&nbsp;&nbsp;&nbsp;<a href="video.html">小视频</a>&nbsp;&nbsp;&nbsp;<a href="lecture.html">小课堂</a></div>
+<body >
+<div class="testwm">
+
+<div style="width:1024px;float: left" id="test1">
+	<a href="#a1" id="a1" style="color: cadetblue">下一步</a>
+	<div id="fi">
+		<a href="index.html"><img src="images/shouye.svg" width="20px" height="16px" >首页</a>&nbsp;&nbsp;&nbsp;
+		<a href="video.html"><img src="images/shipin.svg" width="20px" height="15px">小视频</a>&nbsp;&nbsp;&nbsp;
+		<a href="lecture.html"><img src="images/kecheng.svg" width="20px" height="16px" >小课堂</a>
+	</div>
  
 
 
-<div id="bodyh">test</div>
+<div class="bodyh"  style="margin-left: 5px;background-image: url(images/test-cd1.jpg)"></div>
+<div class="bodyh" style="margin-left: 5px;background-image: url(images/test-cd2.png)"></div>
+<div class="bodyh"  style="margin-left: 5px;background-image: url(images/test-cd3.jpg)"></div>
 
-<div id="bod"><div id="wewe">小测试</div>
-<ul id="lis">
-	<li style="text-indent: 2em; "><hr style="color:#fff;border:1px red dashed;"><p 
-		>1、钱塘江注入东海，在它入海口的海潮即为钱塘潮，天下闻名，每年都有不少游客前来观看这一奇景。海潮到来前，远处先呈现出一个细小的白点，转眼间变成了一缕银线，并伴随着一阵阵闷雷般的潮声，白线翻滚而至。几乎不给人们反应的时间，汹涌澎湃的潮水已呼啸而来，潮峰高达3—5米，后浪赶前浪，一层叠一层，宛如一条长长的白色带子，大有排山倒海之势。诗云:“钱塘一望浪波连,顷刻狂澜横眼前;看似平常江水里,蕴藏能量可惊天。”潮头由远而近，飞驰而来，潮头推拥，鸣声如雷，喷珠溅玉，势如万马奔腾。大家知道钱塘江位于哪个省份吗？</p>
+<div class="bod">
+		<div id="wewe" style="font-size: 15px;font-family: qnchgdl;">经过了小课堂的学习，让我们一起做一做小测试吧！</div>
+	<ul class="lis">
+	<li style="text-indent: 2em; font-size: 19px;"><hr style="color:#fff;border:1px red dashed;"><p>1、诗云:“钱塘一望浪波连,顷刻狂澜横眼前;看似平常江水里,蕴藏能量可惊天。”潮头由远而近，飞驰而来，潮头推拥，鸣声如雷，喷珠溅玉，势如万马奔腾。大家知道钱塘江位于哪个省份吗？</p>
 	</li>
-	<li style="margin-top:90px; "><hr style="color:#fff;border:1px red dashed;"><p class="m">A.山东省</p>
-	<input type="button" id="1a" value="选我" >
-	 <div class="daan" style="display: none;background-image: url(images/cuohao.jpg)" id="1a1"></div></li>
-
-	<li><hr style="color:#fff;border:1px red dashed;"><p class="m">B.陕西省</p>
+	<li style="margin-top:18px; ">
+				<hr style="color:#fff;border:1px red dashed;">
+				<p class="m">A.山东省</p>
+				<input type="button" id="1a" value="选我" >
+	 			<div class="daan" style="display: none;background-image: url(images/cuohao.jpg)" id="1a1"></div>
+	</li>
+	<li><hr style="color:#fff;border:1px red dashed;">
+		<p class="m">B.陕西省</p>
 		<input type="button" id="1b"  value="选我">
-	 <div class="daan" style="display: none;background-image: url(images/cuohao.jpg)" id="1b1"></div>
+	 	<div class="daan" style="display: none;background-image: url(images/cuohao.jpg)" id="1b1"></div>
 	</li>
-	<li><hr style="color:#fff;border:1px red dashed;"><p class="m">C.江苏省</p>
-	<input type="button" id="1c"  value="选我">
-	 <div class="daan" style="display: none;background-image: url(images/cuohao.jpg)" id="1c1"></div>
+	<li><hr style="color:#fff;border:1px red dashed;">
+		<p class="m">C.江苏省</p>
+		<input type="button" id="1c"  value="选我">
+	  	<div class="daan" style="display: none;background-image: url(images/cuohao.jpg)" id="1c1"></div>
 	</li>
-	<li><hr style="color:#fff;border:1px red dashed;"><p class="m">D.浙江省</p>
-	<input type="button" id="1d"  value="选我">
-	 <div class="daan" style="display: none; background-image:url(images/duihao.jpg)" id="1d1"></div>
+	<li><hr style="color:#fff;border:1px red dashed;">
+		<p class="m">D.浙江省</p>
+		<input type="button" id="1d"  value="选我">
+	 	<div class="daan" style="display: none; background-image:url(images/duihao.jpg)" id="1d1"></div>
 	</li>
-
 	
-  
-
-	
-	
-	
-	
-	
-	
-	
-</ul>
+	</ul>
 </div>
-	<script type="text/javascript">
+</div>
+<div class="test" style="display: none;color:aliceblue; " id="test2">
+	<div class="l"  style="background-image: linear-gradient(black, grey);">
+		<div class="cebian" style="background-size: 100% 100%;">
+			<a name="a1" id="a22"  style="text-align: center;font-size: 2em;font-family:隶书">上一题</a>
+			<img src="images/作业_gaitubao_192x144.png">
+		
+		</div>
+		<div class="shangbian">
+			<font size="+5" style="font-family:myfont;"><b>小测试： 第二题</b></font><br>
+			<font size="+3" face="隶书">自我检测，自我成长</font>
+		</div>
+		<div class="cebian" style="margin-top: ">
+			
+			<a href="#a2" id="a2" style="text-align:right ;font-size: 2em;font-family:隶书">下一题</a>
+			<img src="images/you.png"></img>
+		</div>
+	
+	<div class="bod" style="border: 0px">
+		<div style="color: aliceblue;">小测试</div>
+	<ul class="lis" style="color: aliceblue;">
+		<li style="text-indent: 2em;color: aliceblue; "><hr style="color:#fff;border:1px red dashed;">
+			<p>2、下列那一项属于钱塘江涌潮的高潮期</p>
+		</li>
+		<li style="margin-top:10px;color: aliceblue; "><hr style="color:#fff;border:1px red dashed;">
+	
+		    <div style="width: 80%;float: left"><button  id="2a" >A.谷雨</button></div>
+	 		<div class="daan"  style="display: none;background-image: url(images/cuohao.jpg)" id="2a1">
+			</div> 
+		</li>
+
+		<li><hr style="color:#fff;border:1px red dashed;color: aliceblue;">
+			<div style="width: 80%;float: left"><button id="2b">B.夏至</button></div>
+	 		<div class="daan"  style="display: none;background-image: url(images/cuohao.jpg)" id="2b1"></div>
+		</li>
+		<li><hr style="color:#fff;border:1px red dashed;color: aliceblue;">
+			<div style="width: 80%;float: left"><button id="2c">C.秋分</button></div>
+			<div class="daan" style="display: none; background-image: url(images/duihao.jpg)" id="2c1"></div>
+		</li>
+		<li><hr style="color:#fff;border:1px red dashed;color: aliceblue;">
+			<div style="width: 80%;float: left"><button id="2d">D.冬至</button></div>
+	 		<div class="daan" style="display: none;background-image:url(images/cuohao.jpg)" id="2d1"></div>
+			
+		</li>
+	</ul>
+		</div>
+		</div>
+		<script type="text/javascript">
 
 
-$("#1b").click(function(){
-  $("#1b1").show();
+$("#1b").click(
+	function(){
+  	$("#1b1").show();
 	$("#1d1").show();
-});
-$("#1c").click(function(){
-  $("#1c1").show();
+    }
+);
+$("#1c").click(
+	function(){
+	$("#1c1").show();
 	$("#1d1").show();
-});
-		$("#1a").click(function(){
-  $("#1a1").show();
-			$("#1d1").show();
-});
-		$("#1d").click(function(){
-  $("#1d1").show();
-			$("#1d1").show();
-});
+	}
+);
+$("#1a").click(
+	function(){
+  	$("#1a1").show();
+	$("#1d1").show();
+	}
+);
+$("#1d").click(
+	function(){
+  	$("#1d1").show();
+	$("#1d1").show();
+	}
+);
+	
+	</script>
+	</div>
+<div class="test" style="display: none;" id="test3">
+	<div class="l" style=" background-image: linear-gradient(grey,#ca8687);">
+		<div class="cebian" style="background-size: 100% 100%;">
+			<a name="a1" id="a33"  style="text-align: center;font-size: 2em;font-family:隶书">上一题</a>
+			<img src="images/作业_gaitubao_192x144.png"></img>
+		
+		</div>
+		<div class="shangbian">
+			<font size="+5" style="font-family:myfont;color: white"><b>小测试： 第三题</b></font><br>
+			<font size="+3" face="隶书" style="color: white">自我检测，自我成长</font>
+		</div>
+		<div class="cebian" style="margin-top: ">
+			
+			<a href="#a2" id="a3" style="text-align:right ;font-size: 2em;font-family:隶书">下一题</a>
+			<img src="images/you.png"></img>
+		</div>
+	
+	<div class="bod" style="border: 0px">
+		<div style="color: aliceblue;">小测试</div>
+	<ul class="lis" style="color: aliceblue;">
+		<li style="text-indent: 2em;color: aliceblue; "><hr style="color:#fff;border:1px red dashed;">
+			<p>3、观潮时要注意</p>
+		</li>
+		<li style="margin-top:10px;color: aliceblue; "><hr style="color:#fff;border:1px red dashed;">
+			<div style="width: 80%;float: left"><button id="3a">A.在丁字坝上观潮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></div>
+	 		<div class="daan"  style="display: none;background-image: url(images/cuohao.jpg)" id="3a1">
+			</div> 
+		</li>
+
+		<li><hr style="color:#fff;border:1px red dashed;color: aliceblue;">
+			<div style="width: 80%;float: left"><button id="3b">B.在标准堤塘的出入口处观潮</button></div>
+	 		<div class="daan"  style="display: none;background-image: url(images/cuohao.jpg)" id="3b1"></div>
+		</li>
+		<li><hr style="color:#fff;border:1px red dashed;color: aliceblue;">
+			<div style="width: 80%;float: left"><button id="3c">C.在大堤临水侧的砼平台观潮</button></div>
+			<div class="daan" style="display: none;background-image: url(images/cuohao.jpg)" id="3c1"></div>
+		</li>
+		<li><hr style="color:#fff;border:1px red dashed;color: aliceblue;">
+			<div style="width: 80%;float: left"><button id="3d">D.在远处观潮
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</button></div>
+	 		<div class="daan" style="display: none;background-image:url(images/duihao.jpg)" id="3d1"></div>
+		</li>
+	</ul>
+		</div>
+		</div>
+</div>
+<div class="test" style="display: none" id="test4">
+	<div class="l" style=" background-image: linear-gradient(grey,#46485f);">
+		<div class="cebian" style="background-size: 100% 100%;">
+			<a  id="a44"  style="text-align: center;font-size: 2em;font-family:隶书">上一题</a>
+			<img src="images/作业_gaitubao_192x144.png"></img>
+		
+		</div>
+		<div class="shangbian">
+			<font size="+5" style="font-family:myfont;color: white"><b>小测试： 第四题</b></font><br>
+			<font size="+3" face="隶书" style="color: white">自我检测，自我成长</font>
+		</div>
+		<div class="cebian" style="margin-top: ">
+			
+			<a href="#a3" id="a4" style="text-align:right ;font-size: 2em;font-family:隶书">下一题</a>
+			<img src="images/you.png"></img>
+		</div>
+	
+	<div class="bod" style="border: 0px">
+		<div style="color: aliceblue;">小测试</div>
+	<ul class="lis" style="color: aliceblue;">
+		<li style="text-indent: 2em;color: aliceblue; "><hr style="color:#fff;border:1px red dashed;">
+			<p>4.标准堤塘上所留的出入口是</p>
+		</li>
+		<li style="margin-top:10px;color: aliceblue; "><hr style="color:#fff;border:1px red dashed;">
+			<div style="width: 80%;float: left"><button id="4a">A.堤塘检查和维护所需&nbsp;&nbsp;&nbsp;&nbsp;</button></div>
+	 		<div class="daan"  style="display: none;background-image: url(images/duihao.jpg)" id="4a1">
+			</div> 
+		</li>
+
+		<li><hr style="color:#fff;border:1px red dashed;color: aliceblue;">
+			<div style="width: 80%;float: left"><button id="4b">B.保护堤塘的建筑物&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></div>
+	 		<div class="daan"  style="display: none;background-image: url(images/cuohao.jpg)" id="4b1"></div>
+		</li>
+		<li><hr style="color:#fff;border:1px red dashed;color: aliceblue;">
+			<div style="width: 80%;float: left"><button id="4c">C.系堤塘结构的一部分&nbsp;&nbsp;&nbsp;&nbsp;</button></div>
+			<div class="daan" style="display: none;background-image: url(images/cuohao.jpg)" id="4c1"></div>
+		</li>
+		<li><hr style="color:#fff;border:1px red dashed;color: aliceblue;">
+			<div style="width: 80%;float: left"><button id="4d">D.供人们观潮和嬉水之用&nbsp;&nbsp;</button></div>
+	 		<div class="daan" style="display: none;background-image:url(images/cuohao.jpg)" id="4d1"></div>
+		</li>
+	</ul>
+		</div>
+		</div>
+</div>
+<div class="test" style="display: none" id="test5">
+	<div class="l" style=" background-image: linear-gradient(grey,#b69968);">
+		<div class="cebian" style="background-size: 100% 100%;">
+			<a  id="a55"  style="text-align: center;font-size: 2em;font-family:隶书">上一题</a>
+			<img src="images/作业_gaitubao_192x144.png"></img>
+		
+		</div>
+		<div class="shangbian">
+			<font size="+5" style="font-family:myfont;color: white"><b>小测试： 第五题</b></font><br>
+			<font size="+3" face="隶书" style="color: white">自我检测，自我成长</font>
+		</div>
+		<div class="cebian" style="margin-top: ">
+			
+			<a href="#a4" id="a5" style="text-align:right ;font-size: 2em;font-family:隶书">提交</a>
+			<img src="images/you.png"></img>
+		</div>
+	
+	<div class="bod" style="border: 0px">
+		<div style="color: aliceblue;">小测试</div>
+	<ul class="lis" style="color: aliceblue;">
+		<li style="text-indent: 2em;color: aliceblue; "><hr style="color:#fff;border:1px red dashed;">
+			<p>5.下列行为存在安全隐患的是</p>
+		</li>
+		<li style="margin-top:10px;color: aliceblue; "><hr style="color:#fff;border:1px red dashed;">
+			<div style="width: 80%;float: left"><button id="5a">A.观潮活动要选择安全区域或地段</button>
+			</div>
+	 		<div class="daan"  style="display: none;background-image: url(images/cuohao.jpg)" id="5a1"></div> 
+		</li>
+
+		<li><hr style="color:#fff;border:1px red dashed;color: aliceblue;">
+			<div style="width: 80%;float: left"><button id="5b">B.服从观潮工作人员的指挥和管理</button>
+			</div>
+	 		<div class="daan"  style="display: none;background-image: url(images/cuohao.jpg)" id="5b1"></div>
+		</li>
+		<li><hr style="color:#fff;border:1px red dashed;color: aliceblue;">
+			<div style="width: 80%;float: left"><button id="5c">C.要注意沿江大堤上的警示标志&nbsp;&nbsp;</button></div>
+			<div class="daan" style="display: none;background-image: url(images/cuohao.jpg)" id="5c1"></div>
+		</li>
+		<li><hr style="color:#fff;border:1px red dashed;color: aliceblue;">
+			<div style="width: 80%;float: left"><button id="5d">D.越过防浪墙到河滩上面去游玩&nbsp;&nbsp;</button></div>
+	 		<div class="daan" style="display: none;background-image:url(images/duihao.jpg)" id="5d1"></div>
+		</li>
+	</ul>
+		</div>
+		</div>
+</div>
+<div class="test" style="display: none;background-image: linear-gradient(#e66465, #9198e5);height: 616px;" id="test6">
+	<div style="margin-left: 35%;margin-top:12px;margin-bottom: 10px"><img  id="kk" src="images/80-100.png" alt="Paris" width="200" height="200" style=" border-radius: 50%;"></div>
+	<div id="header1" style="height: 60px;font-size: 25px;padding-top: 0;"></div>
+	<div class="card">
+		<div class="header" id="h1"><h1>1</h1></div>
+		<div class="container" id="h11"><p>查看题目</p> </div>
+	</div>
+	<div class="card">
+		<div class="header" id="h2"><h1>2</h1></div>
+		<div class="container" id="h22"><p>查看题目</p> </div>
+	</div>
+	<div class="card">
+		<div class="header" id="h3"><h1>3</h1></div>
+		<div class="container" id="h33"><p>查看题目</p> </div>
+	</div>
+	<div class="card">
+		<div class="header" id="h4"><h1>4</h1></div>
+		<div class="container" id="h44"><p>查看题目</p> </div>
+	</div>
+	<div class="card">
+		<div class="header" id="h5"><h1>5</h1></div>
+		<div class="container" id="h55"><p>查看题目</p> </div>
+	</div>
+</div>
+</div> 
+		<script type="text/javascript">
+
+var a=0;
+var my=new Array();
+			my[1]=0;
+			my[2]=0;
+			my[3]=0;
+			my[4]=0;
+			my[5]=0;
+var key=0;
+$("#1b").click(
+	function(){
+  	$("#1b1").show();
+	$("#1d1").show();
+	my[1]=0;
+	}
+);
+$("#1c").click(
+	function(){
+	$("#1c1").show();
+	$("#1d1").show();
+	my[1]=0;
+	}
+);
+$("#1a").click(
+	function(){
+ 	$("#1a1").show();
+	$("#1d1").show();
+	my[1]=0;
+	}
+);
+$("#1d").click(
+	function(){
+  	$("#1d1").show();a=a+1;
+	my[1]=1;
+	}
+);
+$("#2b").click(
+	function(){
+	$("#2b1").show();
+	$("#2c1").show();
+	my[2]=0;
+	}
+);
+$("#2c").click(
+	function(){
+	$("#2c1").show();
+	$("#2c1").show();
+	a=a+1;my[2]=1;
+	}
+);
+$("#2a").click(
+	function(){
+	$("#2a1").show();
+	$("#2c1").show();
+	my[2]=0;
+	}
+);
+$("#2d").click(
+	function(){
+  	$("#2d1").show();		
+	$("#2c1").show();
+	my[2]=0;
+	}
+);
+$("#3a").click(
+	function(){
+  	$("#3a1").show();
+	$("#3d1").show();
+	my[3]=0;
+	}
+);
+$("#3b").click(
+	function(){
+	$("#3b1").show();
+	$("#3d1").show();
+	my[3]=0;
+	}
+);
+$("#3c").click(
+	function(){
+ 	$("#3c1").show();
+	$("#3d1").show();
+	my[3]=0;
+	}
+);
+$("#3d").click(
+	function(){
+  	$("#3d1").show();
+	a=a+1;my[3]=1;
+	}
+);
+$("#4a").click(
+	function(){
+  	$("#4a1").show();
+	a=a+1;my[4]=1;
+	}
+);
+$("#4b").click(
+	function(){
+	$("#4b1").show();
+	$("#4a1").show();
+	my[4]=0;
+	}
+);
+$("#4c").click(
+	function(){
+ 	$("#4c1").show();
+	$("#4a1").show();
+	my[4]=0;
+	}
+);
+$("#4d").click(
+	function(){
+  	$("#4d1").show();
+	$("#4a1").show();
+	my[4]=0;
+	}
+);
+$("#5a").click(
+	function(){
+  	$("#5a1").show();
+	$("#5d1").show();
+	my[5]=0;
+	}
+);
+$("#5b").click(
+	function(){
+	$("#5b1").show();
+	$("#5d1").show();
+	my[5]=0;
+	}
+);
+$("#5c").click(
+	function(){
+ 	$("#5c1").show();
+	$("#5d1").show();
+	my[5]=0;
+	}
+);
+$("#5d").click(
+	function(){
+  	$("#5d1").show();
+	a=a+1;my[5]=1;
+	}
+);
+$("#a2").click(
+	function(){
+	var id=$(this).attr("id").split("a")[1];
+	$("#test3").show(3000);
+	$("#test2").hide("slow");
+	
+	}
+);
+	
+$("#a3").click(
+	function(){
+	$("#test4").show(3000);
+	$("#test3").hide("slow");
+	
+	}
+);	
+$("#a4").click(
+	function(){
+	$("#test5").show(3000);
+	$("#test4").hide("slow");
+	
+	}
+);
+$("#a5").click(
+	function(){
+	$("#test6").show(3000);
+	$("#test5").hide("slow");
+		key=0;
+	if(key==0)
+	{	var m=1;
+		var s=0;
+		for(m=1;m<=5;m++)
+			{
+				s=my[m]+s;
+			}
+		var txt2=$("<p></p>").text("课程结束，目前您的分数为"+s*20+"分！具体情况如下所示：（红色代表错误，绿色代表正确）");
+	$("#header1").text("课程结束，目前您的分数为"+s*20+"分！具体情况如下所示：（红色代表错误，绿色代表正确）");  
+		
+		if(s<=2)
+			{
+				$("#kk").attr("src","images/0-29.png");
+			}
+		else if(s<=3)
+			{
+			   $("#kk").attr("src","images/30-59.png");
+			}
+		else 
+			{
+				$("#kk").attr("src","images/80-100.png");
+			}
+	}
+		for(m=1;m<=5;m++)
+			{
+			if(my[m]==1)
+			$("#h"+m).attr("style","background-color:#4CAF50");
+			else
+			$("#h"+m).attr("style","background-color:#c76968");
+				}
+	}
+);	
+
+	
+			
+			
+			
+$("#a1").click(
+		function(){
+		$("#test1").hide("slow");
+		$("#test2").show(3000);
+		}
+);
+			
+$("#a22").click(
+		function(){
+		$("#test1").show("slow");	
+		$("#test2").hide("fast");
+		}
+);		
+$("#a33").click(
+		function(){
+		$("#test2").show("slow");	
+		$("#test3").hide("fast");
+		}
+);
+$("#a44").click(
+		function(){
+		$("#test3").show("slow");	
+		$("#test4").hide("fast");
+		}
+);
+$("#a55").click(
+		function(){
+		$("#test4").show("slow");	
+		$("#test5").hide("fast");
+		}
+);
+$(".container").click(
+		function(){
+		var r=$(this).attr("id").slice(2,3);
+		$("#test6").hide();
+		$("#test"+r).show();
+			key=1;
+				   });
+					
 </script>
-</body>
+	</body>
+
 </html>

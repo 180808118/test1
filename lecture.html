@@ -3,54 +3,74 @@
 <head>
 <meta charset="utf-8">
 <title>lecture</title>
-
-
 <style type="text/css">
+	@font-face{
+		font-family:msrry;
+		src: url(css/msrry.ttf);
+	}
+	@font-face{
+		font-family: qnchgdl;
+		src:url(css/qnchgdl.ttf);
+	}
+	@font-face{
+		font-family: hxbnst;
+		src:url(css/hxbnst.ttf);
+	}
+	@font-face{
+		font-family: myfont;
+		src:url(css/cct.ttf);
+	}
+	
+	
 	html {
-  font-family: sans-serif; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  		font-family: sans-serif; /* 1 */
+  		-ms-text-size-adjust: 100%; /* 2 */
+  		-webkit-text-size-adjust: 100%; /* 2 */
+		width: 1007px;
+		overflow: hidden;
 		background-image: url(images/xiaoketang-back.jpg);
 		font-family: "微软雅黑";
 }
 	body{
 		
-		height: 100%;
+		height: 616px;
 		width:100%;
+		background-image: linear-gradient(pink,skyblue);
 	}
 	.lll{
-		background-color: grey;
+		background-color: black;
 		background-image: url(images/xkt-cd.jpg);
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		float:left;
 		width:70%;
 		height: 180px;
+		margin-bottom: 30px;
 		
 		
 	}
 	
 	#menu {
-		background-image: url(images/xkt-cd2.jpg);
+		background-color:#6d5826;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		float: left;
-	display: inherit;
-	position: relative;
-	background: #edebdc;
-	width: 19%;
-	padding: .3% 10%  ;
+		display: block;
+		background: #edebdc;
+		font-family:宋体;
+		width: 20%;
+		padding: .3% 10%  ;
 		padding-right: 0;
-	border: 1px solid #DD8A8C;
-	margin:0 auto;
-	height: 20%;
+		
+		margin:0  auto 3px;
+		height: 172px;
 }
 	h5{
-  font-size: 2em;
-  margin: 0.67em 0;
+     font-size: 2em;
+  	 margin: 0.67em 0;
 }
 .white {position:absolute; width:100px; height:20px; color:#fff; background:#fff; border-top:1px solid #ffdc56; border-right:1px solid #957704; border-bottom:1px solid #937603; border-left:1px solid #ffdc56;overflow:hidden; text-align:center;}
-.blackc {position:absolute; top:0; left:0; width:98px; height:18px; color:#000; font-family:verdana; font-size:11px; font-weight:bold; overflow:hidden; border-top:1px solid #ffd42e; border-right:1px solid #caa205; border-bottom:1px solid #c9a105; border-left:1px solid #ffd42e; overflow:hidden; text-align:center; line-height:15px; background:#fc0;}
+.blackc {position:absolute; top:0; left:0; width:98px; height:18px; color:#000; font-family:hxbnst; font-size:12px; font-weight:bold; overflow:hidden; border-top:1px solid #ffd42e; border-right:1px solid #caa205; border-bottom:1px solid #c9a105; border-left:1px solid #ffd42e; overflow:hidden; text-align:center; line-height:15px; background:#fc0;}
 .black {position:relative; top:0; left:0; width:102px; height:22px; border:1px solid #000;}
 .cona {position:relative; top:0; left:0; width:105px; height:25px; border-top:1px solid #d5d3ca; border-left:1px solid #d5d3ca; background:#f7f6ef;}
 .conb {position:relative; top:0; left:0; width:107px; height:27px; border-top:1px solid #b8b7af; border-left:1px solid #b8b7af; background:#f7f6ef;}
@@ -62,30 +82,24 @@
 #menu a.switch:hover {color:#c00; background:#edebdc; cursor:pointer;}
 #menu a.switch:hover .white {position:absolute; width:100px; height:20px; color:#fff; background:#fff; border-bottom:1px solid #ffdc56; border-left:1px solid #957704; border-top:1px solid #937603; border-right:1px solid #ffdc56;overflow:hidden; text-align:center;}
 #menu a.switch:hover .blackc {position:absolute; top:0; left:0; width:98px; height:18px; color:#000; font-size:11px; font-weight:bold; overflow:hidden; border-bottom:1px solid #ffd42e; border-left:1px solid #caa205; border-top:1px solid #c9a105; border-right:1px solid #ffd42e; overflow:hidden; text-align:center; line-height:17px; background:#eb0;}
-	#nav ul li{list-style-type: none;
-		 display: block;
-    width: 30%;
-		height:500px;
-    margin: 0 0 0 2.5%;
-    float: left;
-		
-	
-		font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
-		   
-		  
-		
-		
-		
-		
-	
+	#nav ul{
+	}
+	#nav ul li{
+		 list-style-type: none;
+	 	 display: block;
+   		 width: 32%;
+		 height:400px;
+    	 margin: 0 0 0 .5%;
+    	 float: left;
+		 font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
 	}
 	#nav ul li div.one{
 		background-image: url(images/xkt-xingqiu1.jpg);
 		background-repeat:no-repeat;
 		background-size: 100% 100%;
 		float:left;
-		height:100%;
-		width: 50%;
+		height:204px;
+		width: 60%;
 	
 		
 	}
@@ -97,58 +111,191 @@
 		
 		
 	}
-	#next{
-		padding: 20px;
-		height:455px;
+	.next{
+		padding: 0 5px;
+		height:200px;
 		width:30%;
-         overflow: scroll;
-	     float: left;
-		
+        overflow: scroll;
+	    float: left;
 		border: white solid 2px;
-		
+		font-family: qnchgdl;
 	}
 	.tiao{
+		
 		clear: both;
-		height:10%
-			width:100%;
+		height:10%;
+		width:1024px;
+		margin: 30px 0;
 	}
-	.chengyin{
+	.biaoti{
+		text-align: left;
 		float:left;
-			width:85%;
+		width:74%;
 		height:100%;
+		padding-top: 0;
+		font-family: 隶书;
+		font-size: 50px;
+		background-color: #596032;
+		margin-right: 2px;
 	}
 	.lug{float:left;
 		text-align:left;
-		width:15%;
-		margin: 0 auto;
-	padding-top: 0px;}
-	.lug a{text-decoration-line: none;
-	   text-decoration: none;
-	color:black;}
+		width:20%;
+		height:100%;
+		margin: 0 ;
+		padding-top: 0px;}
+	.lug a{
+		text-decoration-line: none;
+	   	text-decoration: none;
+		color:white;}
+	.annv{
+		padding-top:10px ;
+		font-family: msrry;
+		font-size: 35px;
+		display: block;
+		float: left;
+		text-align: center;
+		width: 95%;
+		height: 50px;
+	 	background-color: #896a45;
+	}
+	.annv:hover{
+		 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	.button {
+  	display: inline-block;
+  	border-radius: 4px;
+  	background-color: #f4511e;
+  	border: none;
+  	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+    padding-top: 10px;
+	width: 100%;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 0px;
+	height: 50.9px;
+	}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+	.neirong{
+		width: 100%;
+		height: 350px;
+		display: none;
+	}
+	div.img {
+    border: 1px solid #ccc;
+	background-color: white;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: 20%;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+	
+}
+
+
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+	height:150px;
+	-webkit-box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 3px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+	#xiang444{
+	column-count:3;
+	column-gap:100px;
+	column-rule-style:dotted;
+	width:990px;
+		height: 300px;
+	font-family: qnchgdl;
+	text-indent: 2em; 
+	padding:7.5px;
+    font-size: 20px;
+	/* Firefox */
+	-moz-column-count:3;
+	-moz-column-gap:100px;
+	-moz-column-rule-style:dotted;
+
+	/* Safari and Chrome */
+	-webkit-column-count:3;
+	-webkit-column-gap:40px;
+	-webkit-column-rule-style:dotted;
+	}
 </style>
-<script type="text/javascript">
-	function letsg()
-	{
-		document.getElementById('lsg').innerHTML="下一步&nbsp;&nbsp;——&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>";
-	}
-	function lesg()
-	{
-		document.getElementById('lsg').innerHTML="下一步&nbsp;&nbsp;——&nbsp;>";
-	}
-	</script>
+
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+
+
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body height="100%">
+<body style="height:600px; width:1005px;background-color: black">
 <div class="lll" ></div>	
-<div id="menu" style="background-image: url(images/xkt-cd2.jpg);
+<div id="menu" style="background-image: url(images/lecture-cd.png);
 		background-size: 100% 100%;
-		background-repeat: no-repeat;">
+		background-repeat: no-repeat;
+					  background-color:">
  
   <div class="cond">
     <div class="conc">
       <div class="conb">
         <div class="cona">
-          <div class="black"> <a class="switch" href="#nogo"><span class="white"><span class="blackc" title="Item one">成因</span></span></a></div>
+          <div class="black"> <a class="switch" href="#nogo"><span class="white"><span class="blackc" title="点我查看详细成因" id="xiang1">成因</span></span></a></div>
         </div>
       </div>
     </div>
@@ -157,7 +304,7 @@
     <div class="conc">
       <div class="conb">
         <div class="cona">
-          <div class="black"> <a class="switch" href="#nogo"><span class="white"><span class="blackc" title="Item two">历史文化</span></span></a></div>
+          <div class="black"> <a class="switch" href="#nogo"><span class="white"><span class="blackc" title="点我查看历史文化" id="xiang2">历史文化</span></span></a></div>
         </div>
       </div>
     </div>
@@ -166,7 +313,7 @@
     <div class="conc">
       <div class="conb">
         <div class="cona">
-          <div class="black"> <a class="switch" href="#nogo"><span class="white"><span class="blackc" title="Item three">潮水分类</span></span></a></div>
+          <div class="black"> <a class="switch" href="#nogo"><span class="white"><span class="blackc" title="点我查看潮水分类" id="xiang3">潮水分类</span></span></a></div>
         </div>
       </div>
     </div>
@@ -175,7 +322,7 @@
     <div class="conc">
       <div class="conb">
         <div class="cona">
-          <div class="black"> <a class="switch" href="#nogo"><span class="white"><span class="blackc" title="Item four">安全防护</span></span></a></div>
+          <div class="black"> <a class="switch" href="#nogo"><span class="white"><span class="blackc" title="点我查看安全防护" id="xiang4">安全防护</span></span></a></div>
         </div>
       </div>
     </div>
@@ -184,36 +331,58 @@
     <div class="conc">
       <div class="conb">
         <div class="cona">
-          <div class="black"><a class="switch" href="index.html"><span class="white"><span class="blackc" title="Item five">返回首页</span></span></a></div>
+          <div class="black"><a class="switch" href="index.html"><span class="white"><span class="blackc" title="点我返回首页">返回首页</span></span></a></div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-	<div class="tiao"><hr>
-<div class="chengyin" ><h2>成因</h2></div>
-<div class="lug"><a href="test.html"><h2 id="lsg"  onMouseout="lesg()" onmouseover="letsg()">下一步&nbsp;&nbsp;——&nbsp;></h2></a></div>
-	<hr></div>
+	<div class="tiao" >
+<div class="biaoti" style="display: none" id="xiang11">下面是钱塘江潮的3种成因</div>
+<div class="biaoti" style="display: none;background-color: #dea32c;" id="xiang22">历史文化</div>
+<div class="biaoti" style="display: none;background-color: #525f42;" id="xiang33">潮水分类</div>
+<div class="biaoti" style="display: none;background-color: #d1c7b7;" id="xiang44">安全防护</div>
+
+
+<div class="lug" title="点我进入小测试"><div class="button" style="vertical-align:middle;"><a href="test.html" ><span>下一步</span></a></div></div>
+	</div>
 	
 <div id="nav" >
-<ul>
+<ul class="neirong" style="width: auto;height: auto;" id="xiang111" >
 <li >
-<div id="next" style="color: white;background-color: #87ceeb;background-color: black;"><h2>天时：</h2><p>农历八月十六日至十八日，太阳、月球、地球几乎在一条直线上，所以这天海水受到的引潮力（月球、太阳或其他天体对地球上单位质量物体的引力和对地心单位质量物体的引力之差，或地球绕地-月（日）质心运动所产生的惯性离心力与月（日）引力的合力）最大。</p>
+	<div >
+	<div id="li1" style="display: none">
+		<div class="one" style="background-image:url(images/xke-xingqiu1.jpg)"></div>
+		<div class="next" style="color: white;background-color: #87ceeb;background-color: black;"><p>农历八月十六日至十八日，太阳、月球、地球几乎在一条直线上，所以这天海水受到的引潮力（月球、太阳或其他天体对地球上单位质量物体的引力和对地心单位质量物体的引力之差，或地球绕地-月（日）质心运动所产生的惯性离心力与月（日）引力的合力）最大。</p>
+		</div>	
 		
-	</div>	
-<div class="one" style="background-image:url(images/xke-xingqiu1.jpg)"></div>	
-</li>
-<li><div id="next" style="color: white; background-color: #f08080;background-color: black;">
-		<h2>地利：</h2><p>跟钱塘江口状似喇叭形有关。钱塘江南岸赭山以东近50万亩围垦大地像半岛似地挡住江口，使钱塘江赭山至外十二公里段酷似肚大口小的瓶子，潮水易进难退，杭州湾外口宽达100公里，到外十二工段仅宽几公里，江口东段河床又突然上升，滩高水浅，当大量潮水从钱塘江口涌进来时，由于江面迅速缩小，使潮水来不及均匀上升，就只好后浪推前浪，层层相叠。其次还跟钱塘江水下多沉沙有关，这些沉沙对潮流起阻挡和摩擦作用，使潮水前坡变陡，速度减缓，从而形成后浪赶前浪，一浪叠一浪涌。</p>
 	</div>
-	<div class="one" style="background-image:url(images/xkt-diyi.jpg)"></div>	
+		<div class="annv" id="li11" style="background-color: #5e7c85;">天时</div>
+		</div>
+</li>
+<li><div>
+	<div id="li2" style="display: none;">
+		<div class="one" style="background-image:url(images/xkt-diyi.jpg)"></div>
+		<div class="next" style="color: white; background-color: #f08080;background-color: black;">
+		
+		<p>跟钱塘江口状似喇叭形有关。钱塘江南岸赭山以东近50万亩围垦大地像半岛似地挡住江口，使钱塘江赭山至外十二公里段酷似肚大口小的瓶子，潮水易进难退，杭州湾外口宽达100公里，到外十二工段仅宽几公里，江口东段河床又突然上升，滩高水浅，当大量潮水从钱塘江口涌进来时，由于江面迅速缩小，使潮水来不及均匀上升，就只好后浪推前浪，层层相叠。其次还跟钱塘江水下多沉沙有关，这些沉沙对潮流起阻挡和摩擦作用，使潮水前坡变陡，速度减缓，从而形成后浪赶前浪，一浪叠一浪涌。</p>
+		</div>
+		
+	</div>
+		<div id="li22" class="annv" >地利</div>
+	</div>
 </li>	
 <li class="three">
-	<div id="next"  style="color:white; background-color: #deb887;background-color: black;">
-		<h2>风势：</h2>沿海一带常刮东南风，风向与潮水方向大体一致，助长了潮势。
+	<div>
+	<div id="li3" style="display: none;">
+		<div class="one" style="background-image:url(images/xkt-feng.jpg)"></div>
+		<div class="next"  style="color:white; background-color: #deb887;background-color: black;">
+		沿海一带常刮东南风，风向与潮水方向大体一致，助长了潮势。</div>
+			
 	</div>
-	<div class="one" style="background-image:url(images/xkt-feng.jpg)"></div>	
+		<div id="li33" class="annv" style="background-color: #525f42;" title="点我可查看详细内容" >风势</div>
+	</div>
 </li>
 	
 	
@@ -221,7 +390,87 @@
 	
 	
 </ul>
+<div class="neirong" id="xiang222" style="background-color: gold;">
+	<img src="images/lecture-lishi.jpg" alt="Paris" width="500" height="250" style="border-radius: 50%;display: block;float: left; margin:  35px 15px">
+	<div style="background-color: pink;float: left;width: 450px;margin-top: 40px;padding: 3px;text-indent: 2em; font-family: qnchgdl;box-shadow: 10px 10px 5px #888888;font-size: 20px" >早在汉、魏、六朝时就已蔚成风气，至唐、宋时，此风更盛。相传农历8月18日，是潮神的生日，故潮峰最高。南宋朝廷曾经规定，这一天在钱塘江上校阅水师，以后相沿成习，八月十八逐渐成为观潮节。北宋诗人潘阆的《酒泉子》中写道：
+长忆观潮，满郭人争江上望。来疑沧海尽成空，万面鼓声中。弄潮儿向涛头立，手把红旗旗不湿。别来几向梦中看，梦觉尚心寒。
+这首诗便是当年“弄潮”与“观潮”活动的真实写照。</div>
 </div>
+<div class="neirong" id="xiang333" style="background-color:#5e7c85;padding-top: 7px; height:410px; margin-right: 10px;font-family: hxbnst; ">
+	<div class="responsive">
+  		<div class="img">
+    <a target="_blank" href="images/lecture-jiaochachao.jpg">
+		<img src="images/lecture-jiaochachao.jpg" alt="Trolltunga Norway" width="300px" height="200px">
+    </a>
+    <div class="desc" title="介绍"  
+			  data-toggle="popover" data-placement="bottom" data-trigger="hover"
+			data-content="从杭州湾传来的潮波分成两股，即东潮和南潮，两股潮头在绕过大缺口沙洲后，就像两兄弟一样交叉相抱，形成变化多端、异常壮观的交叉潮">交叉潮<br>（又名十字潮）</div>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="img">
+    <a target="_blank" href="images/lecture-yixianchao.jpg">
+		<img src="images/lecture-yixianchao.jpg" alt="Trolltunga Norway" width="600" height="400">
+    </a>
+    <div class="desc" title="介绍"  
+			 data-toggle="popover" data-placement="bottom" data-trigger="hover"
+			data-content="盐官位与河槽宽度向上游急剧收缩之后的不远处，东、南两股潮交会后刚好成一直线，潮能集中，潮头特别高，通常为1—2米，有时可达3米以上。">一线潮<br>（观赏地：盐官）</div>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="img">
+    <a target="_blank" href="images/lecture-huitouchao.jpg">
+		<img src="images/lecture-huitouchao.jpg" alt="Trolltunga Norway" width="600" height="400">
+    </a>
+    <div class="desc"  title="介绍"  
+			 data-toggle="popover" data-placement="bottom" data-trigger="hover"
+			data-content="潮水到达老盐仓。老盐仓的河道上建有一条长达660米的拦河丁坝，咆哮而来的潮水遇到障碍后将被反射折回，翻卷回头">回头潮<br>（观赏地：海宁老盐仓）</div>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="img">
+    <a target="_blank" href="images/lecture-chongtianchao.jpg">
+		<img src="images/lecture-chongtianchao.jpg" alt="Trolltunga Norway" width="600" height="400">
+    </a>
+    <div class="desc" title="介绍"  
+			 data-toggle="popover" data-placement="bottom" data-trigger="hover"
+			data-content="冲天潮这是发生于堤、坝相交处的特种潮。在堤坝相交转弯角的处，上进起一股水柱，低者二、三米，高者可达十多米。">冲天潮<br>（观赏地：赭山美女坝）</div>
+  		</div>
+	</div>
+</div>
+<div class="neirong" id="xiang444" style="background-color:blanchedalmond;font-size: 19px;">钱江潮排山倒海之势容易冲毁堤塘危害生命，海塘一旦出事，会影响到杭嘉湖、萧绍甬平原，关系到千家万户的身家性命。
+标准堤塘上所留的出入口是堤塘检查和维护所需，丁字坝、盘头等是保护堤塘的建筑物，大堤临水侧的砼平台系堤塘结构的一部分，决非供人们观潮和嬉水之用。如果对钱江潮的特性、危害不了解，则要“一不当心，命丧钱江”。因此，在海塘上休憩、玩耍、纳凉时千万不要下堤，不要对堤上的警告、警示不管不顾，避免由于麻痹、疏忽而酿成被潮水吞走的悲剧。
+根据钱塘江的涌潮特点，潮景壮观之处往往是危险之处，涌潮的推进速度及摧毁能力非血肉之躯所能抗衡。涌潮到来，人切莫与其争道，避免发生人被潮水冲走的伤亡事件。
+观潮活动要选择安全区域或地段，服从观潮现场工作人员的指挥和管理，要注意沿江大堤上的警示标志，并严格遵守，按照划定的区域停车、观潮，不要到没有安全防护措施的堤塘附近，以及丁字坝或水上码头、护岸的盘头上观潮。不要越过防浪墙到河滩、丁字坝等上面去游玩、纳凉，更不要在江中游泳、洗澡。
+在面临危险的情况下，不要惊惶失措，要迅速、有序地向安全地带撤退，并立即向周边的防潮巡逻人员或其他人呼救。撤离时，不要为了抢救财物而失去宝贵的自救时机。在万一落水或被潮水击打的情况下，要尽量抓住身边的固定物，防止被潮水卷走。周边人员在看到有人落水的紧急情况下，要迅速采取救援措施并立即发打110报警。
+	
+</div>
+</div>
+
+<script> 
+
+$(document).ready(function(){
+	
+$(".annv").click(
+	function(){
+   	var bl=$(this).attr("id").slice(2,3);
+	$("#li"+bl).slideToggle("slow");
+	});
+$(".blackc").click(
+	function(){
+	var k=$(this).attr("id").slice(5,6);
+	$(".neirong").hide();
+	$(".biaoti").hide();
+	$("#xiang"+k+k).show();
+	$("#xiang"+k+k+k).show();
+	})
+});
+$(function () { 
+	$("[data-toggle='popover']").popover();
+});
+</script>
+ 
+
 	
 
 </body>
