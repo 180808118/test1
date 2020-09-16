@@ -113,6 +113,7 @@
 </head>
 
 <body style="width:1024px; height:616px;">
+
 	<div id="chuangkou">
 	<video controls height="100%" width="100%">
 	<source src="images/video.mp4" type="video/mp4"/>
@@ -124,7 +125,9 @@
 	</video>
 	</div>
 	<a href="index.html"><div id="l">返回首页</div></a>
+		
 	<a id="d" href="images/pintu.jpg"><div class="d" >拼图帮助</div></a>
+	<div id="tishi" style="display: block;margin-top: -5px; float: left;width: 400px; margin-bottom: 2px; text-align: center;font-size: 30px;font-family: cct;">想要看到视频，需要先完成下方拼图游戏哦！</div>
 	<div id="main">
 		<ul id="begin">
 			
@@ -246,6 +249,7 @@
 			var success = document.getElementById("chuangkou");
 			success.style.display = "block";
 			$("#main").hide("slow");
+			$("#tishi").hide();
 			 $("#d").attr("href","lecture.html");
     $(".d").text("下一步");
 		}
