@@ -289,7 +289,9 @@ div.desc {
 </head>
 
 <body style="height:600px; width:1005px;background-color: black">
-<div class="lll" ><div style="margin:0px 100px;font-family: qnchgdl;background-color: #2e3a1f; font-size: 30px;color:#f4511e;text-align: center;opacity: 0.7;border-radius: 20px;">点击右方文字可查看更详细内容哦，成因里试试点击"天时"等！</div></div>	
+<div class="lll" ><div  id="tishi" style="margin:0px 0px;height:178px;font-family: qnchgdl;background-color:orange; font-size: 25px;color:white;text-align: center;opacity: 1;border-radius: 20px;padding: 1px 10px;">
+	<img src="images/renwu.png" width="80px" height="80px">
+	：点击右方文字可查看更详细内容哦，成因里试试点击"天时"等！当右方所有内容学习完毕后，点击橘色方框进入下一步。确认此条提示请点击提示本身，我会消失！</div></div>	
 <div id="menu" style="background-image: url(images/lecture-cd.png);
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
@@ -454,7 +456,10 @@ div.desc {
 <script> 
 
 $(document).ready(function(){
-	
+$("#tishi").click(
+function(){
+	$(this).slideUp("3000");
+});
 $(".annv").click(
 	function(){
    	var bl=$(this).attr("id").slice(2,3);
