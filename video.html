@@ -9,6 +9,11 @@
 			font-family:cct;
 			src: url(css/cct.ttf)
 		}
+		@font-face{
+			font-family:qnchgdl;
+			src: url(css/qnchgdl.ttf)
+		}
+		
 		html{
 			width: 1024px;
 			height:616px;
@@ -41,7 +46,7 @@
 			
 			
 		}
-		.d{
+		.md{
 			height: 50px;
 			width: 100px;
 			float:right;
@@ -75,16 +80,7 @@
 		
 		}
 		#l{
-			height: 50px;
-			width: 100px;
-			float:left;
-		    margin: 20px 20px 20px 100px;
-			font-size: 20px;
-			opacity: 1;
-			font-family: cct;
-			padding: 15px 10px 0px 30px;
-			border: #C0C0C0 px solid;
-			color: blue;
+			
 			
 		}
 		#main{
@@ -108,11 +104,32 @@
 		   
 			
 		}
+		.kk{float: left;
+		 display: block;
+			width:200px;
+			height: 40px;
+			font-size: 25px;
+			padding-top: 10px;
+			margin-top: 0px;
+			font-family: cct;
+			background-color: white;
+			border-right: grey 1px dashed;
+			border-left: grey 1px dashed;
+			border-bottom: grey 1px dashed;
+			text-align: center;
+			
+		}
+		a{
+			text-decoration: none;
+			color:black;
+		}
 	
 	</style>
 </head>
 
 <body style="width:1024px; height:616px;">
+	<div class="kk" id="l" style="margin-left: 300px;"><a href="index.html">返回首页</a></div>
+	<div class="kk"  id="kd"><a id="d" href="images/pintu.jpg">拼图帮助</a></div>
 
 	<div id="chuangkou">
 	<video controls height="100%" width="100%">
@@ -124,10 +141,8 @@
 		</object>
 	</video>
 	</div>
-	<a href="index.html"><div id="l">返回首页</div></a>
-		
-	<a id="d" href="images/pintu.jpg"><div class="d" >拼图帮助</div></a>
-	<div id="tishi" style="display: block;margin-top: -5px; float: left;width: 400px; margin-bottom: 2px; text-align: center;font-size: 30px;font-family: cct;">想要看到视频，需要先完成下方拼图游戏哦！</div>
+	
+	<div id="tishi" style="display: block;margin-top: 7px;margin-left: 200px; float: left;width: 600px; margin-bottom: 2px; text-align: center;font-size: 30px;font-family: qnchgdl;">想要看到视频，需要先完成下方拼图游戏哦！</div>
 	<div id="main">
 		<ul id="begin">
 			
@@ -251,7 +266,7 @@
 			$("#main").hide("slow");
 			$("#tishi").hide();
 			 $("#d").attr("href","lecture.html");
-    $(".d").text("下一步");
+    $("#d").text("下一步");
 		}
 	</script>
 	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
